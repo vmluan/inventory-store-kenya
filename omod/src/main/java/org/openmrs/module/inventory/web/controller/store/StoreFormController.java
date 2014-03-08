@@ -95,7 +95,7 @@ public class StoreFormController {
 	    listParents.addAll(stores);
 	    //System.out.println("parents: "+stores);
 	    for( InventoryStore storeV : stores ){
-	    	if(storeV.getParent() != null){
+	    	if(storeV.getParentStores() != null){
 	    		listParents.remove(storeV);
 	    	}
 	    

@@ -864,7 +864,7 @@ public class AjaxController {
 		model.put("stockBalances", stockBalances );
 		model.put("listCategory", listCategory );
 		model.put("store", store );
-		if(store != null && store.getParent() == null){
+		if(store != null && store.getParentStores() == null){
 			return "/module/inventory/mainstore/viewStockBalanceExpiry";
 		}else
 		{
