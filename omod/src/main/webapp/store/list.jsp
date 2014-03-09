@@ -60,8 +60,8 @@
 		<td><c:out value="${(( pagingUtil.currentPage - 1  ) * pagingUtil.pageSize ) + varStatus.count }"/></td>	
 		<td><a href="#" onclick="STORE.edit('${ store.id}');">${store.name}</a> </td>
 		<td>${store.code}</td>
-	<!-- 	<td>${store.parent.name}</td>     luan. It should be updated later-->
-		<td> Luan </td>
+	<!-- 	<td></td>     store.parent. It should be updated later-->
+		<td>Luan</>
 		<td>${store.role.role}</td>
 		<td>${store.isDrugName}</td>
 		<td>${store.retired}</td>
