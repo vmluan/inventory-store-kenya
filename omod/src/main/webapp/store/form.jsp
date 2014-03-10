@@ -72,8 +72,10 @@
 			<select name="parent"  tabindex="20" multiple>
 				<option value=""></option>
                 <c:forEach items="${parents}" var="vparent">
-                   <option value="${vparent.id}" <c:if test=" ${fn:contains(store.parentStores, vparent)}">selected</c:if> >${vparent.name}</option>
-				   
+                   <option value="${vparent.id}" 
+                   <c:forEach items="${store.parentStores}" var="vselectedParent">
+                        <c:if test="${vselectedParent.id == vparent.id}">selected</c:if>
+                   </c:forEach>>${vparent.name}</option>
 				  
                 </c:forEach>
    			</select>

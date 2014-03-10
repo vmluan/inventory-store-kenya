@@ -61,7 +61,7 @@
 		<td><a href="#" onclick="STORE.edit('${ store.id}');">${store.name}</a> </td>
 		<td>${store.code}</td>
 	<!-- 	<td></td>     store.parent. It should be updated later-->
-		<td>Luan</>
+		<td><font color="red">Update later</font></td>
 		<td>${store.role.role}</td>
 		<td>${store.isDrugName}</td>
 		<td>${store.retired}</td>
